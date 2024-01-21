@@ -1,0 +1,38 @@
+#include <iostream>
+int main() {
+    int intValue;
+    cout << "Enter an integer: ";
+    cin >> intValue;
+    cout << "You entered: " << intValue << std::endl;
+    float floatValue;
+    std::cout << "Enter a float: ";
+    std::cin >> floatValue;
+    std::cout << "You entered: " << floatValue << std::endl;
+
+    // Double precision floating-point Input/Output
+    double doubleValue;
+    std::cout << "Enter a double: ";
+    std::cin >> doubleValue;
+    std::cout << "You entered: " << doubleValue << std::endl;
+
+    // Character Input/Output
+    char charValue;
+    std::cout << "Enter a character: ";
+    std::cin >> charValue;
+    std::cout << "You entered: " << charValue << std::endl;
+
+    // Boolean Input/Output
+    bool boolValue;
+    std::cout << "Enter a boolean (0 or 1): ";
+    std::cin >> boolValue;
+    std::cout << "You entered: " << std::boolalpha << boolValue << std::endl;
+
+    // String Input/Output
+    std::string stringValue;
+    std::cout << "Enter a string: ";
+    std::cin.ignore(); // Ignore the newline character from previous input
+    std::getline(std::cin, stringValue);
+    std::cout << "You entered: " << stringValue << std::endl;
+
+    return 0;
+}
