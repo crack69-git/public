@@ -16,10 +16,4 @@ int main() {
     printf("Sum: %.2f\n", num1 + num2);
     printf("Difference: %.2f\n", num1 - num2);
     printf("Product: %.2f\n", num1 * num2);
-
-    // Check if the second number is not zero before performing division
-    if (num2 != 0) {
-        printf("Quotient: %.2f\n", num1 / num2);
-    } else {
-        printf("Division by zero is undefined.\n");
-    }
+    printf("Quotient: %.2f\n", num1 / num2);
