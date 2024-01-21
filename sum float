@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    float num1, num2, sum;
+
+    // Input: Enter the first float number
+    printf("Enter the first float number: ");
+    scanf("%f", &num1);
+
+    // Input: Enter the second float number
+    printf("Enter the second float number: ");
+    scanf("%f", &num2);
+
+    // Calculate the sum
+    sum = num1 + num2;
+
+    // Output: Display the result with 4 decimal points
+    printf("Sum of %.4f and %.4f is: %.4f\n", num1, num2, sum);
+
+    return 0;
+}
