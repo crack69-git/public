@@ -1,0 +1,42 @@
+
+#include <stdio.h>
+
+int main() {
+    // Integer Input/Output
+    int intValue;
+    printf("Enter an integer: ");
+    scanf("%d", &intValue);
+    printf("You entered: %d\n", intValue);
+
+    // Floating-point Input/Output
+    float floatValue;
+    printf("Enter a float: ");
+    scanf("%f", &floatValue);
+    printf("You entered: %f\n", floatValue);
+
+    // Double precision floating-point Input/Output
+    double doubleValue;
+    printf("Enter a double: ");
+    scanf("%lf", &doubleValue);
+    printf("You entered: %lf\n", doubleValue);
+
+    // Character Input/Output
+    char charValue;
+    printf("Enter a character: ");
+    scanf(" %c", &charValue);
+    printf("You entered: %c\n", charValue);
+
+    // Boolean Input/Output
+    int boolValue;
+    printf("Enter a boolean (0 or 1): ");
+    scanf("%d", &boolValue);
+    printf("You entered: %s\n", boolValue ? "true" : "false");
+
+    // String Input/Output
+    char stringValue[100];
+    printf("Enter a string: ");
+    scanf(" %[^\n]", stringValue);
+    printf("You entered: %s\n", stringValue);
+
+    return 0;
+}
